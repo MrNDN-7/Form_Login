@@ -1,0 +1,90 @@
+<!--NguyenDucNhan_21110568-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mr NDN - 21110568</title>
+    <link rel="stylesheet" href="main.css">
+    <!--icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="form-container">
+        <!--Login Form-->
+        <form action="" id="form-login" class="form form-login">
+            <h2 class="form__row">Login Form</h2>
+            <div class="form__row">
+                <label class="form__label" for="loginName">Full name:</label>
+                <input class="form__input" type="text" id="loginName" name="loginName" placeholder="Enter Name" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="loginPassword">Password:</label>
+                <input class="form__input" type="password" id="loginPassword" name="loginPassword" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form__row">
+                <button class="btn" type="submit">Login</button>
+            </div>
+                <div class="form__row" id="switchToLogin">
+                    <p>Already haven't an account? <a href="#">SignUp here</a></p>
+                </div>
+        
+        </form>
+        <!--Register Form-->
+        <form action="" id="form-register" class="form form-register">
+            <h2 class="form__row">Register Form</h2>
+            <div class="form__row">
+                <label class="form__label" for="registerName">Full name:</label>
+                <input class="form__input" type="text" id="registerName" name="registerName" placeholder="Enter Name" required>
+                <div class="error-message"></div>
+                
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="registerPassword">Password:</label>
+                <input class="form__input" type="password" id="registerPassword" name="registerPassword" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <div class="error-message"></div>
+                <div id="messageregister" class="error-message">
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="confirmPassword">Confirm Password:</label>
+                <input class="form__input" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <div class="error-message"></div>
+                <div id="confirmMessage" class="invalid">Password does not match</div>
+    
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="registerEmail">Email:</label>
+                <input class="form__input" type="email" id="registerEmail" name="registerEmail" placeholder="Enter Email" required>
+                <div class="error-message"></div>
+                <div id="emailMessage" class="invalid">Invalid email address</div>
+                
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="gender">Gender:</label>
+                <select class="form__input" id="gender" name="gender" required>
+                    <option value="">--None--</option>
+                    <option value="Nam">Nam</option>
+                    <option value="Nu">Nữ</option>
+                </select>
+                <div class="error-message"></div>
+            </div>
+            <div class="form__row">
+                <button class="btn" type="submit">Register</button>
+            </div>
+            <div class="form__row" id="switchToSignUp">
+                <p>Already have an account? <a href="#">Login here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>

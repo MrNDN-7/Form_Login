@@ -1,0 +1,133 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.form {
+    position: relative; 
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding-right: 50px;
+}
+
+
+.form__row {
+    position: relative; 
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form__input {
+    width: calc(100% - 36px);
+    padding: 6px 30px 6px 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+.btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.form-login{
+    background-image: url(https://cdn.tgdd.vn/hoi-dap/830131/cach-thay-doi-man-hinh-nen-tren-dien-thoai-samsung-4-556-800x1425.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    
+    
+}
+.form-register{
+    background-image: url(https://i.pinimg.com/originals/3f/dc/36/3fdc36edcb1408fd1319e9cacc081a89.jpg  );
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+}
+
+.error-message {
+    color: red;
+    
+}
+
+
+#emailMessage{
+    display: none;
+}
+
+#messageregister {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#messageregister p {
+    margin: 5px 0;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    content: "✔ ";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    content: "✖ ";
+}
+
+
+#confirmMessage {
+    display: none;
+    margin-top: 5px;
+    color: red;
+    font-size: 14px;
+}
+
+#confirmMessage.valid {
+    color: green;
+}
+
+
+
